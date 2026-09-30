@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f4f4f9; color: #333; }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 { margin-bottom: 0.5rem; }
+    header p { font-size: 0.95rem; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #34495e;
+    }
+    nav a {
+      color: #fff;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover { background: #2c3e50; }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      color: #2c3e50;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    ul { list-style: none; }
+    ul li { margin-bottom: 0.5rem; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav { flex-direction: column; }
+      nav a { text-align: center; border-top: 1px solid #3d566e; }
+    }
+  </style>
+  <link rel="stylesheet" href="p.js">
+  <link rel="stylesheet" href="km.css">
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Phone: +91-XXXXXXXXXX | College: Your College Name</p>
+    <p>Address: Your Address Here</p>
+  </header>
+
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+  </nav>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech in Computer Science – XYZ University</li>
+      <li>Intermediate – ABC College</li>
+      <li>High School – DEF School</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, C++</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Playing Cricket</li>
+      <li>Watching Movies</li>
+      <li>Reading Tech Blogs</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Name | Portfolio</p>
+  </footer>
+
+  <script>
+    // Highlight active nav link
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+    
+</body>
+</html>
